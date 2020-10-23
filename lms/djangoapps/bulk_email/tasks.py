@@ -217,7 +217,6 @@ def perform_delegate_email_batches(entry_id, course_id, task_input, action_name)
                 initial_subtask_status.to_dict(),
             ),
             task_id=subtask_id,
-            routing_key=routing_key,
         )
         return new_subtask
 

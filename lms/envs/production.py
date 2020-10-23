@@ -993,4 +993,42 @@ EXPLICIT_QUEUES = {
         'queue': GRADES_DOWNLOAD_ROUTING_KEY},
     'lms.djangoapps.instructor_task.tasks.generate_certificates': {
         'queue': GRADES_DOWNLOAD_ROUTING_KEY},
+    'lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru': {
+        'queue': ACE_ROUTING_KEY},
+    'lms.djangoapps.email_marketing.tasks.update_user': {
+        'queue': ACE_ROUTING_KEY},
+    'lms.djangoapps.email_marketing.tasks.update_user_email': {
+        'queue': ACE_ROUTING_KEY},
+    'lms.djangoapps.email_marketing.tasks.update_course_enrollment': {
+        'queue': ACE_ROUTING_KEY},
+    'lms.djangoapps.verify_student.tasks.send_verification_status_email': {
+        'queue': ACE_ROUTING_KEY},
+    'lms.djangoapps.verify_student.tasks.send_ace_message': {
+        'queue': ACE_ROUTING_KEY},
+    'lms.djangoapps.verify_student.tasks.send_request_to_ss_for_user': {
+        'queue': SOFTWARE_SECURE_VERIFICATION_ROUTING_KEY},
+    'openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send': {
+        'queue': ACE_ROUTING_KEY},
+    'openedx.core.djangoapps.schedules.tasks._upgrade_reminder_schedule_send': {
+        'queue': ACE_ROUTING_KEY},
+    'openedx.core.djangoapps.schedules.tasks._course_update_schedule_send': {
+        'queue': ACE_ROUTING_KEY},
+    'openedx.core.djangoapps.schedules.tasks.v1.tasks.send_grade_to_credentials': {
+        'queue': CREDENTIALS_GENERATION_ROUTING_KEY},
+    'common.djangoapps.entitlements.tasks.expire_old_entitlements': {
+        'queue': ENTITLEMENTS_EXPIRATION_ROUTING_KEY},
+    'lms.djangoapps.grades.tasks.recalculate_course_and_subsection_grades_for_user': {
+        'queue': POLICY_CHANGE_GRADES_ROUTING_KEY},
+    'lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3': {
+        'queue': RECALCULATE_GRADES_ROUTING_KEY},
+    'openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates': {
+        'queue': PROGRAM_CERTIFICATES_ROUTING_KEY},
+    'openedx.core.djangoapps.programs.tasks.v1.tasks.revoke_program_certificates': {
+        'queue': PROGRAM_CERTIFICATES_ROUTING_KEY},
+    'openedx.core.djangoapps.programs.tasks.v1.tasks.update_certificate_visible_date_on_course_update': {
+        'queue': PROGRAM_CERTIFICATES_ROUTING_KEY},
+    'openedx.core.djangoapps.programs.tasks.v1.tasks.award_course_certificate': {
+        'queue': PROGRAM_CERTIFICATES_ROUTING_KEY},
+    'openedx.core.djangoapps.coursegraph.dump_course_to_neo4j': {
+        'queue': COURSEGRAPH_JOB_QUEUE},
 }

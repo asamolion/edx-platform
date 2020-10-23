@@ -581,4 +581,6 @@ ALTERNATE_ENV_TASKS = {
 EXPLICIT_QUEUES = {
     'lms.djangoapps.grades.tasks.compute_all_grades_for_course': {
         'queue': POLICY_CHANGE_GRADES_ROUTING_KEY},
+    'cms.djangoapps.contentstore.tasks.update_search_index': {
+        'queue': UPDATE_SEARCH_INDEX_JOB_QUEUE},
 }
