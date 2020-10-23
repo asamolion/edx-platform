@@ -299,7 +299,7 @@ class XQueueCertInterface(object):
 
         unverified = False
         # For credit mode generate verified certificate
-        if cert_mode in (CourseMode.CREDIT_MODE, CourseMode.MASTERS, CourseMode.EXECUTIVE_EDUCATION):
+        if cert_mode in (CourseMode.CREDIT_MODE, CourseMode.MASTERS):
             cert_mode = CourseMode.VERIFIED
 
         if template_file is not None:
