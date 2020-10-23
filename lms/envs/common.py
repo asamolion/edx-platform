@@ -3916,8 +3916,7 @@ COURSE_ENROLLMENT_MODES = {
         "id": 8,
         "slug": "executive-educations",
         "display_name": _("Executive Education"),
-        "min_price": 0
-        # TODO: verify this doesn't need to be 1
+        "min_price": 1
     }
 }
 
