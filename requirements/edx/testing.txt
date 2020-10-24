@@ -75,7 +75,8 @@ django-fernet-fields==0.6  # via -r requirements/edx/base.txt, edx-enterprise, e
 django-filter==2.2.0      # via -r requirements/edx/base.txt, edx-enterprise
 django-ipware==2.1.0      # via -r requirements/edx/base.txt, edx-enterprise, edx-proctoring
 django-js-asset==1.2.2    # via -r requirements/edx/base.txt, django-mptt
-django-method-override==1.0.4  # via -r requirements/edx/base.txt
+#django-method-override==1.0.4  # via -r requirements/edx/base.txt
+-e git+https://gitlab.com/asamolion/django-method-override.git#egg=django-method-override
 django-model-utils==4.0.0  # via -r requirements/edx/base.txt, django-user-tasks, edx-bulk-grades, edx-celeryutils, edx-completion, edx-enterprise, edx-milestones, edx-organizations, edx-proctoring, edx-rbac, edx-submissions, edx-when, edxval, ora2, super-csv
 django-mptt==0.11.0       # via -r requirements/edx/base.txt, django-wiki
 django-multi-email-field==0.6.1  # via -r requirements/edx/base.txt, edx-enterprise
